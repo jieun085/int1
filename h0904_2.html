@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--h0904_2.html 동적으로 버튼을 누르면 폰트 사이즈 변경과 글자를 빨간색으로 바꾸자-->
+    <p id="p01">
+        javascript는 동적인 기능수행(버튼을 눌러서 50px과 빨간글자 처리)단락을 구분하는 id할당
+    </p>
+
+    <script>
+        function myfunction(){
+            var x=document.getElementById("p01");
+            x.style.fontSize="50px";
+            x.style.color="red";
+        }
+    </script>
+
+    <button onclick="myfunction()">
+        click me!!
+    </button>
+
+</body>
+</html>
